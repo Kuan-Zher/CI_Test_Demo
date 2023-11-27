@@ -18,7 +18,7 @@ jobs:
       uses: actions/checkout@v4
       with: 
         repository: Kuan-Zher/DevOps-Week-7-Practical
-        token: ${{ secrets.Week-7-Practical-Token }}
+        token: ${{ secrets.Week7 }}
     - name: List contents
       run:  |
         ls
