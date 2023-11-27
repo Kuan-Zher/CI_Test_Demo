@@ -29,6 +29,5 @@ jobs:
     - run: python hello.py
     - name: install plugin
       run: |
-        pip install --upgrade pip
         pip install pytest
         pytest --cov
