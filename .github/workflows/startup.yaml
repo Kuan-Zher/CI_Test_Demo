@@ -15,14 +15,14 @@ jobs:
         ls
         echo Hello There!
     - name: Checkout private repo
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
       with: 
         repository: Kuan-Zher/DevOps-Week-7-Practical
         token: ${{ secrets.Week-7-Practical-Token }}
     - name: List contents
       run:  |
         ls
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - uses: actions/setup-python@v4
       with: 
         python-version: '3.10'
