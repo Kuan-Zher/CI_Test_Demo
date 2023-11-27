@@ -29,5 +29,5 @@ jobs:
     - run: python hello.py
     - name: install plugin
       run: |
-        python -m pip install pytest
+        sudo apt install python3-pip
         pytest --cov
