@@ -30,4 +30,5 @@ jobs:
     - name: install plugin
       run: |
         pip install pytest pytest-cov
+        pytest
         
