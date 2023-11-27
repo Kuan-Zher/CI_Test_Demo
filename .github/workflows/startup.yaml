@@ -29,5 +29,5 @@ jobs:
     - run: python hello.py
     - name: install plugin
       run: |
-        pip3 install pytest
+        python -m pip install pytest
         pytest --cov
