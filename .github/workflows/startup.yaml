@@ -19,9 +19,11 @@ jobs:
       with: 
         repository: Kuan-Zher/DevOps-Week-7-Practical
         token: ${{ secrets.Week7 }}
+        path: hiddenCode
     - name: List contents
       run:  |
         ls
+        sudo mv ./hiddenCode/*.* ./m
     - uses: actions/checkout@v4
     - uses: actions/setup-python@v4
       with: 
@@ -30,5 +32,5 @@ jobs:
     - name: install plugin
       run: |
         pip install pytest pytest-cov
-        pytest --cov
+        pytest -v -cov --junitxml=report.xml
         
